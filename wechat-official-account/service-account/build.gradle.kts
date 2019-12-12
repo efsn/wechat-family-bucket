@@ -7,6 +7,15 @@ plugins {
 dependencies {
     api("org.springframework.boot:spring-boot-starter-webflux")
     api("io.projectreactor.kotlin:reactor-kotlin-extensions")
+
+    implementation("dom4j:dom4j:1.6.1")
+    implementation("com.alibaba:fastjson:1.2.62")
+    implementation("commons-codec:commons-codec:1.13")
+    implementation("commons-io:commons-io:2.6")
+    implementation("commons-lang:commons-lang:2.6")
+
+    compileOnly("javax.servlet:javax.servlet-api:3.1.0")
+
 }
 
 tasks {
